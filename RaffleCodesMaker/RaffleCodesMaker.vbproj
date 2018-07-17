@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{233235E0-9692-4E07-BC85-E16402088BC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RaffleCodesMaker.My.MyApplication</StartupObject>
+    <RootNamespace>RaffleCodesMaker</RootNamespace>
+    <AssemblyName>RaffleCodesMaker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RaffleCodesMaker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RaffleCodesMaker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbrirSerie.Designer.vb">
+      <DependentUpon>FormAbrirSerie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbrirSerie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompleted.Designer.vb">
+      <DependentUpon>FormCompleted.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompleted.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDespedida.Designer.vb">
+      <DependentUpon>FormDespedida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDespedida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGuardarSerie.Designer.vb">
+      <DependentUpon>FormGuardarSerie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGuardarSerie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSave.Designer.vb">
+      <DependentUpon>FormSave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplash.Designer.vb">
+      <DependentUpon>FormSplash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPorLote.Designer.vb">
+      <DependentUpon>FormPorLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPorLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettingInfo.Designer.vb">
+      <DependentUpon>FormSettingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettingInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStartToGenerate.Designer.vb">
+      <DependentUpon>FormStartToGenerate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStartToGenerate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnoAUno.Designer.vb">
+      <DependentUpon>FormUnoAUno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnoAUno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcome.Designer.vb">
+      <DependentUpon>FormWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulePublicFunctions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormRaffleCodesMaker.Designer.vb">
+      <DependentUpon>FormRaffleCodesMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaffleCodesMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAbrirSerie.resx">
+      <DependentUpon>FormAbrirSerie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompleted.resx">
+      <DependentUpon>FormCompleted.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDespedida.resx">
+      <DependentUpon>FormDespedida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuardarSerie.resx">
+      <DependentUpon>FormGuardarSerie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSave.resx">
+      <DependentUpon>FormSave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettingInfo.resx">
+      <DependentUpon>FormSettingInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSplash.resx">
+      <DependentUpon>FormSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPorLote.resx">
+      <DependentUpon>FormPorLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStartToGenerate.resx">
+      <DependentUpon>FormStartToGenerate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnoAUno.resx">
+      <DependentUpon>FormUnoAUno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcome.resx">
+      <DependentUpon>FormWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaffleCodesMaker.resx">
+      <DependentUpon>FormRaffleCodesMaker.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_find_locate_13934.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
