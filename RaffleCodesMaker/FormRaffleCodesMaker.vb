@@ -3,6 +3,7 @@ Imports System
 Imports System.Drawing.Printing
 Imports MySql.Data.MySqlClient
 
+
 Public Class FormRaffleCodesMaker
     Public PBGElements As Double
     Public MinusTester As Boolean, RTT As Boolean, LimitSaveToExit As Boolean = False, SavedAlready As Boolean = False, ContentToSave As Boolean = False, ShowAll As Boolean = False, FileOpened As Boolean = False 'MinusTester es la variable booleana que se hará verdadera al presionar el Botón Atrás dentro del JPanelUnoAUno para mostar el registro anterior y que al llamar al Método UnoAUno que es el que realiza la Mecanica de esta forma de generación, este sepa que debe mostrar el registro anterior, al presionar el Botón Siguiente del JPanelUnoAUno, se vuelve Falsa.
@@ -10,7 +11,7 @@ Public Class FormRaffleCodesMaker
     Public Cantrif As Integer, Nrif As Integer, CountFUAU As Integer = 0, CountMinus As Integer, OpenedNumRif As Integer = 0 'CantRif contiene el número de la caja de Texto correspondiente a la Cantidad de Rifas solicitadas, es decir la logitud de la serie que se va a generar; por otro lado Nrif Contiene el número de la caja de Texto correspondiente al número donde se va a iniciar la serie de rifas a generar.
     'CountFUAU es un contador que lleva la cantidad de códigos generados hasta el momento, para que la Aplicación sepa por donde va y no pierda esta cuenta, cuanto llega al maximo de la longitud de la serie, entonces termina la generación de Códigos nuevos; por otro lado CountMinus Servirá para verificar si el registro que se esta mostrando actualmente en el jTable del JPanelUnoAUno es el último generado o se ha presionado el Botón Atrás y después si se quiere regresar al último generado y seguir generando el siguiente hasta terminar. Será igual a CountFUAU hasta presionar el Botón Atras donde ira disminuyendo de uno en uno cada vez que presinemos Atras y se mostrará el registro correspondiente a esta posición en el arreglo, cuando presionemos Siguiente aumentará de uno en uno hasta se igual nuevamente a CoutFUAU y generar el nuevo código, es decir es la que permite que no se genere un nuevo codigo si se va hacia atras y solo navegar entre los códigos ya generados, y así hasta terminar con la serie.
     Public tModel As DataTable() 'Declaración del DefaultTableModel para armar el jTable
-    Dim ConnSTR As String = "server=localhost;uid=root;pwd=ClarksRootP@ss7@;database=pruebas;port=33067"
+    Dim ConnSTR As String = "server=localhost;uid=user;pwd=password;database=pruebas;port=0000"
     Public dConnection As New MySqlConnection(ConnSTR)
     Public dDataAdapter As MySqlDataAdapter
 
@@ -781,10 +782,15 @@ Public Class FormRaffleCodesMaker
         LabelProgressBarGlobal.Visible = True
         PBGElements = 100 / Elements
     End Sub
+
     Public Sub Progress()
+        Dim value As Double
         If (ProgressBarGlobal.Value < 100) Then
-            ProgressBarGlobal.Value += PBGElements
-            LabelProgressBarGlobal.Text = String.Format("{0:###}%", ProgressBarGlobal.Value)
+            value = ProgressBarGlobal.Value + PBGElements
+            If (value <= 100) Then
+                ProgressBarGlobal.Value += PBGElements
+                LabelProgressBarGlobal.Text = String.Format("{0:###}%", ProgressBarGlobal.Value)
+            End If
         End If
     End Sub
 End Class

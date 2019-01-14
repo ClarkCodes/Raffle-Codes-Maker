@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,12 +9,12 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("WindowsApp1")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WindowsApp1")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("Raffle Codes Maker")>
+<Assembly: AssemblyDescription("A Basic but useful Software to make Raffles, maintaining randomness and equity with all participants and preventing fraud")>
+<Assembly: AssemblyCompany("Clark Codes")>
+<Assembly: AssemblyProduct("Raffle Codes Maker_Alpha")>
+<Assembly: AssemblyCopyright("")>
+<Assembly: AssemblyTrademark("Raffle Codes Maker by Clark Codes")>
 
 <Assembly: ComVisible(False)>
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("es-EC")>
