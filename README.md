@@ -11,7 +11,7 @@ Make the List of Raffle Numbers, start where you want and make the numbers quant
 
 If the winner meets all these requirements and everything is fine, it means that it is legal and the participant is accredited to receive the prize, but if at least one of them fails, the participant can not receive the prize until the requirement is met, but if it is impossible, you must repeat the draw to choose a new winner.
 
-#### This system has been thought to prevent possible fraud coming from any participant.
+#### This system has been thought to prevent possible cheating coming from any participant.
 
 After you export as Microsoft Excel, you can open the folder where you saved the file or open the file itself.
 The idea with a future feature is that you are able to have settings where you can establish some details like the Raffle Name among others. Also on future features you're be able to save your raffles series in the application serverless-contained database, or in a MySQL Data Base Server.
