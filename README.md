@@ -8,4 +8,10 @@ Make the List of Raffle Numbers, start where you want and make the numbers quant
 #### This system has been thought to prevent possible fraud coming from any participant.
 
 ## Current State
-This Software is currently in Alpha Version, it is not finished so please check out the Issues tab to see the list of bugs and features pending to be implemented for more info.
+This Software is currently in Alpha Version, it is not finished so please check out the Issues tab to see the List of Known Bugs and the List of pending features to be implemented for more info.
+
+## Contributing
+If you want to contribute to this Project... Welcome!, you can do it, just be sure to check out the Issues Section where (as I said before) there is a List of Known Bugs and also a To-Do List about features that are planned to be incorporated, so you can have an idea about what you can contribute with, or even propose something totally new that it's not contemplated there. Eventually, I want to fix the bugs and implement the features planned, but if you want to help me with it, I appreciate it, thank you.
+
+## Finally... Thank you for visiting
+Yeah, I'm grateful for your visit, thank you for seeing my work.. and if you are a contributor, I really appreciate in a very special way your support and help... thank you. :)
