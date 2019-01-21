@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Create a report to help us improve
-title: 'Bug Report: [Date (dd/mm/yyyy)] - Issue #[Next Issue Number]'
+title: 'Bug Report: [Date (dd/mm/yyyy)] - Issue'
 labels: ''
 assignees: ''
 
