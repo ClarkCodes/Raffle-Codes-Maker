@@ -1,3 +1,12 @@
+## TABLE OF CONTENTS
+      RAFFLE CODE MAKER
+      HOW IT WORKS
+      INSTALL/RUN APPLICATION
+      DEBUG APPLICATION
+      SCREENSHOTS
+      CURRENT STATE
+      CONTRIBUTING
+
 # Raffle Codes Maker - Alpha
 A Basic but useful Software to make Raffles, maintaining randomness and equity with all participants and preventing fraud, pairing every participant with an Id-card and a Unique Raffle Code, even if they take many Raffle Numbers, everyone of them has a Unique Raffle Code.
 
