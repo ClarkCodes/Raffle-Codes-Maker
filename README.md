@@ -1,3 +1,12 @@
+## TABLE OF CONTENTS
+      RAFFLE CODE MAKER
+      HOW IT WORKS
+      INSTALL/RUN APPLICATION
+      DEBUG APPLICATION
+      SCREENSHOTS
+      CURRENT STATE
+      CONTRIBUTING
+
 # Raffle Codes Maker - Alpha
 A Basic but useful Software to make Raffles, maintaining randomness and equity with all participants and preventing fraud, pairing every participant with an Id-card and a Unique Raffle Code, even if they take many Raffle Numbers, everyone of them has a Unique Raffle Code.
 
@@ -15,6 +24,24 @@ If the winner meets all these requirements and everything is fine, it means that
 
 After you export as Microsoft Excel, you can open the folder where you saved the file or open the file itself.
 The idea with a future feature is that you are able to have settings where you can establish some details like the Raffle Name among others. Also on future features you're be able to save your raffles series in the application serverless-contained database, or in a MySQL Data Base Server.
+
+## Install/Run Application 
+To install and run the application, do the following steps: 
+1. Fork the repository and clone the repository into local 
+      git clone "url"
+2. Ensure that you have the Visual Code Basic .NET Framework installed. 
+3. Open command line and do: 
+    vbc.exe ApplicationDesigner.vb
+4. A dialog box with the application should pop up and the application will be asked to run. 
+
+## Debug Application 
+1. Open Project in Visual Studio .NET
+2. Select Build, Configuration Manager and click Debug Setting
+3. Right click on Solution Explorer and select Properties
+4. Open Config Properties, Build and Select Active Debug Configuration
+5. Press Ok to save the settings 
+6. Recompile the Application and Run Again
+
 
 ## Current State
 This Software is currently in Alpha Version, it is not finished so please check out the Issues tab to see the List of Known Bugs and the List of pending features to be implemented for more info.
