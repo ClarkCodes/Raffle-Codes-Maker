@@ -42,7 +42,7 @@ To install and run the application, do the following steps:
 5. Press Ok to save the settings 
 6. Recompile the Application and Run Again
 
-## SCREENSHOTS INCLUDED HERE 
+
 ## Current State
 This Software is currently in Alpha Version, it is not finished so please check out the Issues tab to see the List of Known Bugs and the List of pending features to be implemented for more info.
 
